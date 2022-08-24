@@ -1,22 +1,12 @@
 from random import choice
 
-def die_A():
-    return [3, 3, 3, 3, 3, 6]
-
-def die_B():
-    return [2, 2, 2, 5, 5, 5]
-
-def die_C():
-    return [1, 4, 4, 4, 4, 4]
-
-
 def roll(die: str):
     if die=="A":
-        return choice(die_A())
+        return choice([3, 3, 3, 3, 3, 6])
     if die=="B":
-        return choice(die_B())
+        return choice([2, 2, 2, 5, 5, 5])
     if die=="C":
-        return choice(die_C())
+        return choice([1, 4, 4, 4, 4, 4])
 
 def play(die1: str, die2: str, times: int):
     win_A, win_B, draw = 0,0,0
